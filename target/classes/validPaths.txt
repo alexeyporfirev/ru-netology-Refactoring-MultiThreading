@@ -9,3 +9,4 @@
 /classic.html
 /events.html
 /events.js
+/messages
