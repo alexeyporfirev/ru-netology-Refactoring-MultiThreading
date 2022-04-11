@@ -123,7 +123,7 @@ public class Server {
     private List<String> getValidPaths(String filename) {
         List<String> paths = new ArrayList<String>();
         try (BufferedReader br = new BufferedReader(
-                new FileReader(getClass().getResource("/" + filename).getFile()))
+                new InputStreamReader(getClass().getResourceAsStream("/" + filename)))
         ) {
             String line;
             while ((line = br.readLine()) != null) {
